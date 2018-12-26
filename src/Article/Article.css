@@ -1,6 +1,9 @@
+@media only screen and (min-width: 1000px) {
+    .card {
+      width: 50%;
+    }
+  }
 
-
-
-.card {
-    width: 18rem;
-}
+  .card {
+    margin: 0 auto;
+  }

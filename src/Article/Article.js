@@ -10,37 +10,27 @@ class Article extends Component {
   }
 
   componentDidMount(){
-    window.$('[data-toggle="popover"]').popover();
+  
   }
   say(val){
      // alert("hello "+val);
   }
   render() {
-      this.val1 = "tu as liker";
       return (
     
     <div name={this.props.id} class="card"  >
         
-        <h2 class="card-title">Article {this.props.id}</h2>
-       <div class="card-body"> 
-            <p class="card-text">Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent,
-             porteur de sens et utilisant les structures propres à une langue. 
-            Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonnet
-             ou le haïku.</p>
+        <h1 class="card-title">{this.props.titre}</h1>
+        <img src={this.props.photo} class="card-img-top" alt="..."   />
+       <div class="card-body "> 
+            <p class="card-text">{this.props.description}</p>
         </div>
         <div class="card-body">
-        <Button class="btn btn-primary"   
-            data-container="body" data-toggle="popover" data-placement="top" data-content={this.val1}
-        >
-            Like
+        <Button class="btn btn-primary"   >
+            Lire la suite
         </Button>
-        <Button class="btn btn-secondary" 
-            data-container="body" data-toggle="popover" data-placement="top" data-content={this.val1} >
-            Normal
-        </Button>
-        <Button type="button" class="btn btn-warning" 
-             data-container="body" data-toggle="popover" data-placement="top" data-content={this.val1}>
-            Dislike
+        <Button class="btn btn-success" >
+            Commentaires
         </Button>
         </div>
     </div>
