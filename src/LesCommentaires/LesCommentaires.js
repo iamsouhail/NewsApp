@@ -23,7 +23,7 @@ class LesCommentaires extends Component {
     }
 
       return (
-        <div class="collapse bg-white text-dark lescommentaires" id={this.props.divName} >
+        <div class="collapse  text-dark lescommentaires" id={this.props.divName} >
           <ul class="list-unstyled">
             {this.v}
           </ul>          

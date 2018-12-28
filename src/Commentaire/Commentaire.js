@@ -12,10 +12,10 @@ class Commentaire extends Component {
   render() {
 
     return (
-        <li class="blockquote text-left">
-            <p class="mb-0 p-2 commentaire">{"\""+this.props.text+"\""}</p>
+        <li class="blockquote text-left bg-secondary text-white rounded m-2">
+            <p class="mb-2 p-2 commentaire">{"\""+this.props.text+"\""}</p>
                 
-                <footer class="blockquote-footer p-1">en {"" +this.props.date}, Dit Mr   
+                <footer class="blockquote-footer p-1 text-light ">en {"" +this.props.date}, Dit Mr   
                         <cite title={this.props.personne}>{" "+this.props.personne}</cite>
                         
                 </footer>    
