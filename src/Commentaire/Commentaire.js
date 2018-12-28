@@ -10,13 +10,18 @@ class Commentaire extends Component {
 
 
   render() {
-      return (
-    <div class="card card-body">
-            <p>
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </p>
-            </div>
-      )}
+
+    return (
+        <li class="blockquote text-left">
+            <p class="mb-0 commentaire">{"\""+this.props.text+"\""}</p>
+                
+                <footer class="blockquote-footer">en {"" +this.props.date}, Dit Mr   
+                        <cite title={this.props.personne}>{" "+this.props.personne}</cite>
+                        
+                </footer>    
+        </li>
+        
+    )};
 }
 
 export default Commentaire;

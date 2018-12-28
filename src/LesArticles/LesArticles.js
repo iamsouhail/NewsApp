@@ -9,16 +9,16 @@ class LesArticles extends Component {
   }
   render() {
 
-    const text = "Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent,porteur de sens et utilisant les structures propres à une langue. Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonne tou le haïku.";
+    const text = "If there is one debate which doesn’t seem to end, and doesn’t look like ending anytime soon, it is who is the greatest of all time? While some fans argue over Lionel Messi and Cristiano Ronaldo, some like to roll back the years and fight over Pele and Diego Maradona. Following protocol, one particular Russian legend has also had his say on the matter.";
     this.arr = [];
     for(var i=0;i<100;i++){
-      const name = "Article "+i;
+      //const name = "Article "+i;
       this.arr.push(
       <div class="row top-buffer">  
         <div class="col">
-          <Article id={i} photo="https://beninwebtv.com/wp-content/uploads/2018/08/cristiano-ronaldo.jpg" 
-                          titre={name}
-                          description={text+i}/>
+          <Article id={i} photo="https://www.foxsportsasia.com/uploads/2018/09/lionel-messi720.jpg" 
+                          titre="Russian football legend calls Lionel Messi greatest of all time, blasts Ballon d’Or"
+                          description={text}/>
         </div>
       </div> );
     }

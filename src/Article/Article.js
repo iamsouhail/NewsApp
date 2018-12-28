@@ -21,7 +21,7 @@ class Article extends Component {
     
     <div name={this.props.id} class="card"  >
         
-        <h1 class="card-title">{this.props.titre}</h1>
+        <h3 class="card-title">{this.props.titre}</h3>
         <img src={this.props.photo} class="card-img-top" alt="..."   />
        <div class="card-body "> 
             <p class="card-text lead">{this.props.description}</p>
