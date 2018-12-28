@@ -18,7 +18,7 @@ class LesArticles extends Component {
         <div class="col">
           <Article id={i} photo="https://beninwebtv.com/wp-content/uploads/2018/08/cristiano-ronaldo.jpg" 
                           titre={name}
-                          description={text}/>
+                          description={text+i}/>
         </div>
       </div> );
     }
