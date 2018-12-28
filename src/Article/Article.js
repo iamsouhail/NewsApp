@@ -19,7 +19,7 @@ class Article extends Component {
   render() {
       return (
     
-    <div name={this.props.id} class="card"  >
+    <div name={this.props.id} class="card bg-dark text-white"  >
         
         <h3 class="card-title">{this.props.titre}</h3>
         <img src={this.props.photo} class="card-img-top" alt="..."   />
@@ -27,16 +27,13 @@ class Article extends Component {
             <p class="card-text lead">{this.props.description}</p>
         </div>
         <div class="card-body">
-        <button class="btn btn-primary" >
-            Lire la suite
-        </button>
-        <button class="btn btn-success" data-toggle="collapse" href={"#mycomm-"+this.props.id} >
+        <button class="btn btn-link" data-toggle="collapse" href={"#mycomm-"+this.props.id} >
             Commentaires
         </button>
         </div>
         <LesCommentaires divName={"mycomm-"+this.props.id} />
     </div>
-      )}
+      )}    
 }
 
 export default Article;

@@ -13,9 +13,9 @@ class Commentaire extends Component {
 
     return (
         <li class="blockquote text-left">
-            <p class="mb-0 commentaire">{"\""+this.props.text+"\""}</p>
+            <p class="mb-0 p-2 commentaire">{"\""+this.props.text+"\""}</p>
                 
-                <footer class="blockquote-footer">en {"" +this.props.date}, Dit Mr   
+                <footer class="blockquote-footer p-1">en {"" +this.props.date}, Dit Mr   
                         <cite title={this.props.personne}>{" "+this.props.personne}</cite>
                         
                 </footer>    
